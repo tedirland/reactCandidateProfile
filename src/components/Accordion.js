@@ -15,7 +15,10 @@ const Accordion = ({ items }) => {
 
         const active = index === activeIndex ? 'active' : '';
         return (
+          
             <React.Fragment key={item.title}>
+               
+                    <div className ='four wide column'>
                 <div
                     className= {`title ${active}`} onClick={() => onTitleClick(index)}
                 >
@@ -24,6 +27,7 @@ const Accordion = ({ items }) => {
                 </div>
                 <div className={`content ${active}`}>
                     <p>{item.content}</p>
+                </div>
                 </div>
             </React.Fragment>)
     });

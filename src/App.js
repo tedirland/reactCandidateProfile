@@ -1,5 +1,7 @@
 import React from 'react'
 import Accordion from './components/Accordion'
+import NavMenu from './components/NavMenu'
+import Sidebar from './components/Sidebar'
 
 const items = [
     {
@@ -18,7 +20,8 @@ const items = [
 export default () => {
     return (
     <div>
-        
+       
+        <NavMenu />
         <Accordion items={items} />
     </div>
     )
